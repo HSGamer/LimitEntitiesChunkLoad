@@ -1,0 +1,5 @@
+name: LimitEntitiesChunkLoad
+version: '${project.version}'
+main: me.hsgamer.limitentitieschunkload.LimitEntitiesChunkLoad
+api-version: 1.17
+authors: [ HSGamer ]

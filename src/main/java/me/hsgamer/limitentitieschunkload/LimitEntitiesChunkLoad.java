@@ -44,7 +44,7 @@ public final class LimitEntitiesChunkLoad extends JavaPlugin implements Listener
             currentChunkTask.set(Bukkit.getScheduler().runTask(this, () -> {
                 int count = 0;
                 for (Entity entity : chunk.getEntities()) {
-                    if (entity instanceof Item || entity instanceof Monster) {
+                    if (entity.isValid() && (entity instanceof Item || entity instanceof Monster)) {
                         if (count >= maxEntitiesPerChunk) {
                             entity.remove();
                         }
